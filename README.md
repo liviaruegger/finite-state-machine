@@ -1,9 +1,8 @@
 # Máquina de Estados Finitos
 
-<!---
 #### Diagrama de estados
+
 ![Diagrama de estados](diagrama.png)
--->
 
 #### Tabela de transição de estados
 
