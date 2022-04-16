@@ -59,7 +59,7 @@ def novo_estado(transicao: str, response: Response):
             "Novo estado": novo_estado
         }
     except TransicaoIndisponivel:
-        response.status_code = status.HTTP_404_NOT_FOUND
+        response.status_code = status.HTTP_405_METHOD_NOT_ALLOWED
         return {
             "Erro": "transição indisponível"
         }
