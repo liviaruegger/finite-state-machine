@@ -10,6 +10,10 @@ class Transicao:
         self.proximo_estado = proximo_estado
 
 
+class TransicaoIndisponivel(Exception):
+    pass
+
+
 class MEF:
     ''' A MEF contém:
         - estados      -> uma lista de estados (class Estado)
@@ -87,7 +91,7 @@ class MEF:
         ''' Atualiza o estado atual da MEF e retorna o novo estado.
         '''
         if transicao not in self.listar_transicoes_possiveis():
-            print('Transição indisponível') #TODO: tratar erro
+            raise TransicaoIndisponivel('Transição indisponível')
         else:
             proximo = self.__proximo_estado(transicao)
             self.estado_atual = self.__indice(proximo)
