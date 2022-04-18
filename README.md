@@ -1,5 +1,7 @@
 # Máquina de Estados Finitos
 
+[Link para a aplicação no Heroku](https://finite-state-machine.herokuapp.com/)
+
 ### Diagrama de estados
 
 ![Diagrama de estados](diagrama.png)
